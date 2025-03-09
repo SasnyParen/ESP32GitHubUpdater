@@ -34,11 +34,11 @@ ESP32GitHubUpdater – это библиотека для ESP32, позволя�
 #include "ESP32GitHubUpdater.h"
 
 // Параметры WiFi и GitHub
-const char* ssid = "CI";
-const char* password = "23852fzbe64ds";
-const char* githubUser = "sasnyparen";
-const char* githubRepo = "esp32bin";
-const char* githubBranch = "main";
+const char* ssid = "test";
+const char* password = "test";
+const char* githubUser = "test";
+const char* githubRepo = "test";
+const char* githubBranch = "test";
 
 // Создаем объект обновления (порт веб-сервера по умолчанию 80)
 ESP32GitHubUpdater updater(ssid, password, githubUser, githubRepo, githubBranch);
