@@ -24,7 +24,7 @@ ESP32GitHubUpdater – это библиотека для ESP32, позволя�
 
 1. Скачайте или склонируйте репозиторий:
    ```bash
-   git clone https://github.com/yourusername/ESP32GitHubUpdater.git
+   git clone https://github.com/SasnyParen/ESP32GitHubUpdater.git
 2. Скопируйте файлы ESP32GitHubUpdater.h и ESP32GitHubUpdater.cpp в папку libraries/ESP32GitHubUpdater вашего Arduino IDE.
 3. Перезапустите Arduino IDE, чтобы библиотека появилась в списке установленных.
 
