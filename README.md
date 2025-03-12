@@ -4,7 +4,6 @@ ESP32GitHubUpdater – это библиотека для ESP32, позволя�
 
 ## Особенности
 
-- **Подключение к WiFi:** Автоматическое подключение к заданной WiFi сети с выводом IP-адреса в Serial Monitor.
 - **Работа с SPIFFS:** Инициализация файловой системы SPIFFS для хранения файлов и работы веб-сервера.
 - **OTA обновление:** Загрузка бинарного файла прошивки с GitHub и обновление устройства без необходимости физического подключения.
 - **Веб-интерфейс:** HTML-страница для загрузки списка файлов репозитория и выбора файла для обновления.
@@ -13,7 +12,6 @@ ESP32GitHubUpdater – это библиотека для ESP32, позволя�
 
 - ESP32 (Arduino IDE с поддержкой ESP32)
 - Библиотеки:
-  - [WiFi](https://github.com/espressif/arduino-esp32)
   - [HTTPClient](https://github.com/espressif/arduino-esp32)
   - [Update](https://github.com/espressif/arduino-esp32)
   - [SPIFFS](https://github.com/espressif/arduino-esp32)
@@ -34,14 +32,12 @@ ESP32GitHubUpdater – это библиотека для ESP32, позволя�
 #include "ESP32GitHubUpdater.h"
 
 // Параметры WiFi и GitHub
-const char* ssid = "test";
-const char* password = "test";
 const char* githubUser = "test";
 const char* githubRepo = "test";
 const char* githubBranch = "test";
 
 // Создаем объект обновления (порт веб-сервера по умолчанию 80)
-ESP32GitHubUpdater updater(ssid, password, githubUser, githubRepo, githubBranch);
+ESP32GitHubUpdater updater(githubUser, githubRepo, githubBranch);
 
 void setup() {
   // Инициализация библиотеки
